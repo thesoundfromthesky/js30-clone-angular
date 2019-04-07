@@ -1,6 +1,21 @@
 # Js30CloneAngular
 
+This project is clone project from https://javascript30.com/
+I am making this project to show my progress.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+
+# Credit
+coding style and assets
+https://javascript30.com/
+
+random img api
+https://loremflickr.com/
+http://avatars.adorable.io/
+
+img
+https://www.pexels.com/photo/corn-fields-under-white-clouds-with-blue-sky-during-daytime-158827/
+https://www.pexels.com/photo/silhouette-of-dancing-people-inside-club-1677710/
 
 ## Development server
 

@@ -1,0 +1,19 @@
+.header {
+  height: 30vh;
+  color: white;
+  font-size: 10vw;
+  background-size: 100% 100%;
+  background-image: url("./../../../assets/img/field-corn-air-frisch-158827.jpeg");
+}
+
+@media only screen and (orientation: landscape) {
+  .header {
+    height: 100vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 599px) and (min-height: 599px) {
+  .header {
+    height: 100vh;
+  }
+}

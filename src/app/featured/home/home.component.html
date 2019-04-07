@@ -1,0 +1,56 @@
+<header>
+  <div class="header flex-container justify-content-center align-items-center">
+    <p class="animated zoomIn">
+      JS30 Clone <br />
+      with Angular7
+    </p>
+  </div>
+</header>
+<main>
+  <div class="grid-container">
+    <mat-card
+      *ngFor="let course of courseData; let i = index; trackBy: trackByFn"
+      class="mat-elevation-z8 flex-column-container hidden"
+    >
+      <img
+        mat-card-image
+        loremFlickr
+        alt="a random photo from LoremFlickr"
+        title="random photo of LoremFlickr"
+      />
+      <mat-card-header>
+        <img mat-card-avatar adorable />
+        <mat-card-title>{{ course.title }}</mat-card-title>
+        <mat-card-subtitle>Day{{ i + 1 }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions align="end" class="margin-top-auto">
+        <a
+          mat-raised-button
+          [routerLink]="['/js30-0' + (i + 1)]"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          target="_blank"
+        >
+          original
+        </a>
+        <a
+          mat-raised-button
+          [routerLink]="['/js30-0' + (i + 1), 'clone']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          target="_blank"
+        >
+          clone
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</main>
+<footer class="footer flex-container justify-content-center align-items-center">
+  <p>
+    <span>
+      <mat-icon svgIcon="md:github-circle"></mat-icon>
+      hellow
+    </span>
+  </p>
+</footer>
