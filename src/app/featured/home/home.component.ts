@@ -27,7 +27,6 @@ import { getRandomInt } from "src/app/class/util";
 export class HomeComponent implements OnInit, AfterViewInit {
   readonly courseData: Course[] = courseData;
   readonly colorData: ThemePalette[] = colorData;
-  innerHeight: number;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -41,7 +40,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.randomColor();
-    this.innerHeight = this.window.innerHeight;
     this.checkPosition();
   }
 
@@ -66,7 +64,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       const positionFromTop: number =
         item.nativeElement.getBoundingClientRect().top +
         item.nativeElement.getBoundingClientRect().height;
-      if (positionFromTop < this.innerHeight) {
+      if (positionFromTop <  this.window.innerHeight) {
         this.renderer.removeClass(item.nativeElement, "hidden");
         this.renderer.addClass(item.nativeElement, "animated");
         this.renderer.addClass(item.nativeElement, "pulse");

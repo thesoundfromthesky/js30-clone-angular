@@ -1,5 +1,6 @@
-import { getRandomInt } from "../../../class/util";
+
 import { environment } from "src/environments/environment";
+import { getRandomInt } from 'src/app/class/util';
 
 const AVATAR_URL: string = "https://api.adorable.io/avatars/285";
 //https://api.adorable.io/avatars/285/identifier.png
