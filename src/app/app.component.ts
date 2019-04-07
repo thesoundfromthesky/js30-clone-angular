@@ -16,7 +16,7 @@ export class AppComponent {
   ) {
     this.matIconRegistry.addSvgIconSetInNamespace(
       "md",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("/assets/mdi.svg")
+      this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/mdi.svg")
     );
   }
 }
