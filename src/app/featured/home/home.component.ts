@@ -10,12 +10,13 @@ import {
   HostListener
 } from "@angular/core";
 
+import { MatCard, MatAnchor, ThemePalette } from "@angular/material";
+
 import { WINDOW } from "src/app/shared/core/service/window.service";
 
 import { courseData } from "./class/courseData";
 import { Course } from "./class/course";
-import { colorData } from "./class/colorData";
-import { MatCard, MatAnchor, ThemePalette } from "@angular/material";
+import { colorData } from './class/colorData';
 import { getRandomInt } from "src/app/class/util";
 
 @Component({

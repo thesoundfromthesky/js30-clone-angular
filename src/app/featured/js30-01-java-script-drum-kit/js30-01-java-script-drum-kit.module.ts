@@ -5,7 +5,8 @@ import {
   JS3001JavaScriptDrumKitRoutingModule,
   routedComponents
 } from "./js30-01-java-script-drum-kit-routing.module";
-import { MaterialModule } from "../../shared/material/material.module";
+
+import { MaterialModule } from "src/app/shared/material/material.module";
 
 @NgModule({
   declarations: [...routedComponents],
