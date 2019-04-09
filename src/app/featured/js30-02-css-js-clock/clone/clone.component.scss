@@ -1,0 +1,188 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+  background: url("/assets/img/above-adventure-aerial-air.jpg");
+  background-size: cover;
+}
+
+.clock {
+  width: 15rem;
+  height: 15rem;
+
+  position: relative;
+
+  margin: auto;
+
+  border: 1.2rem solid rgb(114, 12, 32);
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 0.4rem rgba(0, 0, 0, 0.1),
+    inset 0 0 0 0.5rem rgb(177, 208, 204), inset 0 0 5rem black, 0 0 5rem red;
+
+  .clock-face {
+    height: 100%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 0.25rem);
+    left: calc(50% - 0.25rem);
+
+    width: 0.5rem;
+    height: 0.5rem;
+
+    border-radius: 50%;
+
+    background: rgb(114, 12, 32);
+    z-index: 1;
+  }
+}
+
+.audio-control {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+}
+
+.hand {
+  height: 0.3rem;
+
+  background: rgba(238, 77, 13, 0.459);
+
+  position: absolute;
+  top: calc(50% - 0.15rem);
+  left: 50%;
+
+  transform-origin: left;
+  transform: rotate(-90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+
+  &.hour-hand {
+    width: 3rem;
+  }
+
+  &.min-hand {
+    width: 4rem;
+  }
+
+  &.second-hand {
+    width: 5rem;
+  }
+}
+
+.section {
+  font-size: 2rem;
+  color: white;
+
+  position: absolute;
+}
+
+button {
+  font-size: 1rem;
+}
+
+div.description {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+@media only screen and (min-width: 599px) and (min-height: 599px) {
+  .clock {
+    width: 30rem;
+    height: 30rem;
+
+    border-width: 2.4rem;
+
+    box-shadow: 0 0 0 0.8rem rgba(0, 0, 0, 0.1),
+      inset 0 0 0 1rem rgb(177, 208, 204), inset 0 0 10rem black, 0 0 10rem red;
+
+    &:after {
+      content: "";
+      top: calc(50% - 0.5rem);
+      left: calc(50% - 0.5rem);
+
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  .hand {
+    height: 0.6rem;
+
+    position: absolute;
+    top: calc(50% - 0.3rem);
+
+    &.hour-hand {
+      width: 7rem;
+    }
+
+    &.min-hand {
+      width: 9rem;
+    }
+
+    &.second-hand {
+      width: 10rem;
+    }
+  }
+
+  .section {
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  .clock {
+    width: 60rem;
+    height: 60rem;
+
+    border-width: 4.8rem;
+
+    box-shadow: 0 0 0 1.6rem rgba(0, 0, 0, 0.1),
+      inset 0 0 0 2rem rgb(177, 208, 204), inset 0 0 20rem black, 0 0 20rem red;
+
+    &:after {
+      content: "";
+      top: calc(50% - 1rem);
+      left: calc(50% - 1rem);
+
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .hand {
+    height: 1.2rem;
+
+    position: absolute;
+    top: calc(50% - 0.6rem);
+
+    &.hour-hand {
+      width: 15rem;
+    }
+
+    &.min-hand {
+      width: 18rem;
+    }
+
+    &.second-hand {
+      width: 20rem;
+    }
+  }
+
+  .section {
+    font-size: 5rem;
+  }
+
+  button {
+    font-size: 4rem;
+  }
+}

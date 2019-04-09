@@ -55,7 +55,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   @HostListener("window:scroll", ["$event"])
+  @HostListener("window:resize", ["$event"])
   onWindowScroll(e: Event): void {
+    console.log(e);
     this.checkPosition();
   }
 
@@ -67,7 +69,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       if (positionFromTop <  this.window.innerHeight) {
         this.renderer.removeClass(item.nativeElement, "hidden");
         this.renderer.addClass(item.nativeElement, "animated");
-        this.renderer.addClass(item.nativeElement, "pulse");
+        this.renderer.addClass(item.nativeElement, "fadeIn");
       }
     });
   }
