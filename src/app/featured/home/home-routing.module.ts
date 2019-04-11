@@ -13,6 +13,11 @@ const routes: Routes = [
     path: "js30-02",
     loadChildren:
       "../js30-02-css-js-clock/js30-02-css-js-clock.module#Js3002CssJsClockModule"
+  },
+  {
+    path: "js30-03",
+    loadChildren:
+      "../js30-03/js30-03.module#Js3003Module"
   }
 ];
 

@@ -1,0 +1,107 @@
+:host {
+  --font-size: 1rem;
+  --slider-width: 10em;
+  --blur: ;
+  --brightness: ;
+  --contrast: ;
+  --color: ;
+  --grayscale: ;
+  --hue-rotate: ;
+  --invert: ;
+  --opacity: ;
+  --saturate: ;
+  --sepia: ;
+}
+
+:host {
+  display: block;
+  min-height: 100%;
+  overflow: hidden;
+
+  background: #a52a2a;
+
+  color: white;
+  font-size: var(--font-size);
+  line-height: 1.2;
+}
+
+@media only screen and (min-width: 599px) and (min-height: 599px) {
+  :host {
+    --slider-width: 15em;
+  }
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  :host {
+    --font-size: 2rem;
+    --slider-width: 40em;
+  }
+}
+
+.outer-container {
+  width: 90vw;
+  margin: 1vw auto;
+}
+
+.container {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+@function grayscale($value) {
+  @return #{"grayscale(" + $value + ")"};
+}
+
+@function invert($value) {
+  @return #{"invert(" + $value + ")"};
+}
+
+@function opacity($value) {
+  @return #{"opacity(" + $value + ")"};
+}
+
+img {
+  width: 100%;
+  max-width: 50em;
+  height: auto;
+
+  filter: blur(calc(var(--blur) * 1px)) brightness(calc(var(--brightness) * 1%))
+    contrast(calc(var(--contrast) * 1%)) drop-shadow(8px 8px 10px var(--color))
+    grayscale(calc(var(--grayscale) * 1%))
+    hue-rotate(calc((var(--hue-rotate) * 1deg)))
+    invert(calc(var(--invert) * 1%)) opacity(calc(var(--opacity) * 1%))
+    saturate(var(--saturate)) sepia(calc(var(--sepia) * 1%));
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 2em;
+}
+
+input {
+  cursor: grab;
+  width: var(--slider-width);
+}

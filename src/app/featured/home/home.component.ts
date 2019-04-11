@@ -57,7 +57,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @HostListener("window:scroll", ["$event"])
   @HostListener("window:resize", ["$event"])
   onWindowScroll(e: Event): void {
-    console.log(e);
     this.checkPosition();
   }
 

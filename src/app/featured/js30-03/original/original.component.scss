@@ -1,0 +1,57 @@
+:host {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+:host {
+  display: block;
+  overflow: hidden;
+
+  min-height: 100%;
+
+  background: #193549;
+
+  text-align: center;
+
+  font-family: "helvetica neue", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 50px;
+
+  line-height: 1.2;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+  &:link {
+    color: initial;
+  }
+  &:visited {
+    color: initial;
+  }
+  &:hover {
+    color: red;
+  }
+  &:active {
+    color: green;
+  }
+}
