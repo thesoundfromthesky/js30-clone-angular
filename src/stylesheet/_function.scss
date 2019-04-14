@@ -1,0 +1,11 @@
+@function varvw($var) {
+  @return #{"calc(var(" + $var + ") * 1vw)"};
+}
+
+@function varem($var) {
+  @return #{"calc(var(" + $var + ") * 1em)"};
+}
+
+@function varpx($var) {
+    @return #{"calc(var(" + $var + ") * 1px)"};
+  }

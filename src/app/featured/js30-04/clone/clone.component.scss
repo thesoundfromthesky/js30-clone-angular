@@ -1,0 +1,60 @@
+@import "./src/stylesheet/function";
+@import "../stylesheet/vars";
+@import "../stylesheet/misc";
+
+:host {
+  display: block;
+  overflow: hidden;
+
+  min-height: 100vh;
+
+  line-height: 1.2;
+  font-size: 1rem;
+  color: var(--font-color);
+
+  background-image: url("/assets/img/pexels-photo-1498964.jpeg");
+  background-size: contain;
+}
+
+.container {
+  border: 5px solid salmon;
+  width: varvw(--container-width);
+  margin: 3vw auto;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  font-size: varem(--font-size);
+}
+
+header h1 {
+  padding: varem(--header-padding) 0;
+
+  background: var(--header-bg);
+
+  text-align: center;
+  font-size: varem(--header-font-size);
+}
+
+table {
+  text-align: left;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 3px dashed var(--table-border-color);
+  padding: varem(--table-padding);
+}
+thead {
+  background: var(--table-bg-head);
+}
+tbody {
+  background: var(--table-bg-body);
+}
+tbody:nth-child(even) {
+  background: var(--table-bg-body2);
+}
+
+@import "../stylesheet/nav";
+@import "../stylesheet/media";

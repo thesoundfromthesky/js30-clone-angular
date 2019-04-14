@@ -1,0 +1,13 @@
+nav {
+  padding: varem(--nav-padding);
+
+  font-size: varem(--nav-font-size);
+
+  background: var(--nav-bg);
+
+  button {
+    border: var(--nav-button-border);
+    border-radius: 5px;
+    padding: varem(--nav-padding);
+  }
+}

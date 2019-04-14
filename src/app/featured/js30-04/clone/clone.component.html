@@ -1,0 +1,68 @@
+<div class="container">
+  <header>
+    <h1>Generating Dummy Data</h1>
+  </header>
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th class="display"></th>
+          <th>Name</th>
+          <th class="display">City</th>
+          <th>Birtdate</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let person of peopleService.people; trackBy: trackByfn">
+        <tr>
+          <td class="display"></td>
+          <td>{{ person.name }}</td>
+          <td class="display">{{ person.city }}</td>
+          <td>{{ person.birthDate }}</td>
+        </tr>
+        <tr>
+          <th class="display">Phrase</th>
+          <td class="display" colspan="3">{{ person.bio }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <nav>
+    <button newButton>
+      New
+    </button>
+    <button sort>
+      asc-sort
+    </button>
+    <button [isAsc]="false" sort>
+      dec-sort
+    </button>
+    <form onSubmit="return false;">
+      <label for="search">search:</label>
+      <input id="search" search type="text" />
+    </form>
+  </nav>
+  <footer>
+    <h2>Credit</h2>
+    <ol>
+      <li>
+        <a href="https://javascript30.com/">JS30</a>
+      </li>
+      <li>
+        <a href="https://github.com/wesbos/JavaScript30"
+        >JS30-Github</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/marak/Faker.js/"
+          >Faker.js/</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.pexels.com/photo/macbook-near-wireless-headphones-mug-and-saucer-1498964/"
+          >pexels</a
+        >
+      </li>
+    </ol>
+  </footer>
+</div>

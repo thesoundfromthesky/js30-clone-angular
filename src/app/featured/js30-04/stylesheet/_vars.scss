@@ -1,0 +1,24 @@
+:host {
+  --display: none;
+
+  --font-color: white;
+  --container-width: 97;
+  --font-size: 1.5;
+
+  --header-font-size: 2;
+  --header-padding: 0.6;
+  --header-bg: #3a1400c4;
+
+  --table-padding: 0.3;
+  --table-bg-head: #762c2cb5;
+  --table-bg-body: #5bdced5e;
+  --table-bg-body2: #b16868a8;
+  --table-border-color: #49657b;
+
+  --nav-font-size: .8;
+  --nav-bg: #2d3e9f;
+  --nav-padding: 0.7;
+
+  --nav-button-border: .1em solid rgba(18, 152, 175, 0.719);
+  --nav-button-padding: .5;
+}

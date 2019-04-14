@@ -18,6 +18,11 @@ const routes: Routes = [
     path: "js30-03",
     loadChildren:
       "../js30-03/js30-03.module#Js3003Module"
+  },
+  {
+    path: "js30-04",
+    loadChildren:
+      "../js30-04/js30-04.module#Js3004Module"
   }
 ];
 

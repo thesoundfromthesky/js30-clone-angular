@@ -3,8 +3,10 @@
 This project is clone project from https://javascript30.com/<br />
 I am making this project to show my progress.
 
-1. Day1. Completed - Api, 06,2019
-2. Day2. Completed - Api, 08,2019
+1. Day1. Completed - Apr, 06, 2019
+2. Day2. Completed - Apr, 08, 2019
+3. Day3. Completed - Apr, 11, 2019
+4. Day4. Completed - Apr, 13, 2019
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
@@ -15,6 +17,7 @@ https://javascript30.com/
 
 random img api<br />
 https://loremflickr.com/
+
 http://avatars.adorable.io/
 
 img<br />
@@ -24,6 +27,7 @@ https://www.pexels.com/photo/red-and-blue-hot-air-balloon-floating-on-air-on-bod
 
 sound file<br />
 http://www.findsounds.com/ISAPI/search.dll?start=11&keywords=tick%20ticking&seed=15
+
 http://www.x-3-x.net/vrml/archive/cache/jeffreykbedrick.com/3d/office/ticktock.wav
 
 ## Development server
